@@ -3,13 +3,13 @@
 *.html
 *.xml
 *.txt
-out/
+out/production
 .idea/
 *iml
-*.mf
 nbproject/
 /build/
 /src/Structures/Test.java
 /dist/
-/InputFiles//*.txt
+/InputFiles//output.txt
 !config.txt
+/InputFiles//log.txt

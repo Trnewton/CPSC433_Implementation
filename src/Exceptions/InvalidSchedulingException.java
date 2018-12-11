@@ -10,8 +10,9 @@ package Exceptions;
  * @author thomasnewton
  */
 public class InvalidSchedulingException extends Exception {
+
     public InvalidSchedulingException(String errorMessage) {
         super(errorMessage);
     }
-    
+
 }

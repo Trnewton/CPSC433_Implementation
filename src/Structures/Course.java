@@ -17,25 +17,25 @@ public class Course {
         this.section = section.trim();
         this.id = this.name + this.number + this.type + this.section;
     }
-    
-    public Course(String input){
-            this(input.trim().split("\\s+"));
+
+    public Course(String input) {
+        this(input.trim().split("\\s+"));
     }
-    
-    public Course(String[] input){
+
+    public Course(String[] input) {
         this(input[0].trim(), input[1].trim(), input[2].trim(), input[3].trim());
     }
-    
+
     @Override
     public String toString() {
         return String.format("%s %s %s %s", name, number, type, section);
     }
-    
+
     @Override
-    public boolean equals(Object obj){
-        if( obj instanceof Course){
+    public boolean equals(Object obj) {
+        if (obj instanceof Course) {
             return this.id.equals(((Course) obj).id);
-        } else if(obj instanceof String){
+        } else if (obj instanceof String) {
             return this.id.equals(((String) obj).replace(" ", ""));
         }
         return false;
@@ -48,8 +48,19 @@ public class Course {
         return hash;
     }
 
-    public String getName() { return name; }
-    public String getNumber() { return number; }
-    public String getType() { return type; }
-    public String getSection() { return section; }
+    public String getName() {
+        return name;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getSection() {
+        return section;
+    }
 }

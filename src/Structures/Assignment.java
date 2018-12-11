@@ -10,29 +10,30 @@ package Structures;
  * @author thomasnewton
  */
 public class Assignment {
+
     private final Course course;
     private final Slot slot;
-    
-    public Assignment(){
+
+    public Assignment() {
         this.course = null;
         this.slot = null;
     }
-    
-    public Assignment(Course course, Slot slot){
+
+    public Assignment(Course course, Slot slot) {
         this.course = course;
         this.slot = slot;
     }
-    
-    public Course getCourse(){
+
+    public Course getCourse() {
         return course;
     }
-    
-    public Slot getSlot(){
+
+    public Slot getSlot() {
         return slot;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return String.format("%-24s\t:%s", course.toString(), slot.toString());
     }
 }
